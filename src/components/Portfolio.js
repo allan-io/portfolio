@@ -5,10 +5,12 @@ import { DiGithubAlt } from 'react-icons/di'
 
 function Portfolio(props) {
   const [toggler, setToggler] = useState(false);
-  const { title, subtitle, imageUrl, largeImageUrl, url, getIcons, github } = props.content;
+  const { title, subtitle, imageUrl, largeImageUrl, url, github, getIcons } = props.content;
   const handleToggler = (value) => {
     setToggler(value);
   }
+
+
 
   return (
     <div className="mi-portfolio mi-portfolio-visible">

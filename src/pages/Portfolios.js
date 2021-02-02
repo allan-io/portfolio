@@ -4,21 +4,13 @@ import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
 import Pagination from "../components/Pagination";
 import PortfoliosView from "../components/PortfoliosView";
+import projects from "../data/projects"
 
 function Portfolios() {
-  const [portfolios, setPortfoios] = useState([]);
+  const [portfolios, setPortfolios] = useState(projects);
   const [currentPage, setCurrentPage] = useState(1);
   const [portfoliosPerPage] = useState(9);
 
-  useEffect(() => {
-    let mounted = true;
-    axios.get("/api/portfolios").then((response) => {
-      if(mounted){
-        setPortfoios(response.data);
-      }
-    });
-    return () => mounted = false;
-  }, [portfolios]);
 
   const indexOfLastPortfolios = currentPage * portfoliosPerPage;
   const indexOfFirstPortfolios = indexOfLastPortfolios - portfoliosPerPage;
