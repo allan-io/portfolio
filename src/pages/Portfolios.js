@@ -4,9 +4,9 @@ import Layout from "../components/Layout";
 import Pagination from "../components/Pagination";
 import PortfoliosView from "../components/PortfoliosView";
 import projects from "../data/projects"
+const portfolios = projects;
 
 function Portfolios() {
-  const portfolios = projects;
   const [currentPage, setCurrentPage] = useState(1);
   const [portfoliosPerPage] = useState(9);
 
