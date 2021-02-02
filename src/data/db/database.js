@@ -1,7 +1,4 @@
 import Mock from "../mock";
-import React from 'react'
-import { FaReact, FaNodeJs } from 'react-icons/fa'
-import { SiJavascript } from 'react-icons/si'
 
 const database = {
   information: {

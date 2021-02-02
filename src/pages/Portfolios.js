@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
 import Pagination from "../components/Pagination";
@@ -7,7 +6,7 @@ import PortfoliosView from "../components/PortfoliosView";
 import projects from "../data/projects"
 
 function Portfolios() {
-  const [portfolios, setPortfolios] = useState(projects);
+  const portfolios = projects;
   const [currentPage, setCurrentPage] = useState(1);
   const [portfoliosPerPage] = useState(9);
 
