@@ -1,7 +1,8 @@
-##[devallan.com](https://www.devallan.com)
+## [devallan.com](https://www.devallan.com)
 
 Personal portfolio with integrated blog
 
+### available scripts:
 | command | Description |
 | ----------- | ----------- |
 |`npm run start` | run app in dev mode localhost:3000 |
