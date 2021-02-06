@@ -28,10 +28,10 @@
     &-toggler {
         position: absolute;
         left: 100%;
-        top: 20px;
+        top: 45px;
         padding: 0;
-        height: $input-button-height;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         text-align: center;
         font-size: 1.6rem;
         background: lighten($color-bg-body, 5);
@@ -235,5 +235,9 @@
                 }
             }
         }
+    }
+
+    @media #{$layout-mobile-sm} {
+        width: 220px;
     }
 }
