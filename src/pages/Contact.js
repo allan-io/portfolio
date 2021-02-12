@@ -36,9 +36,12 @@ function Contact(){
     if( !formdata.name ){
       setError(true);
       setMessage('Name is required');
-    } else if( !formdata.email ){
+    } else if( !formdata.email ) {
       setError(true);
       setMessage('Email is required');
+    } else if( !/^.+@.+\..+$/.test(formdata.email ) ) {
+      setError(true);
+      setMessage('Email requires username, @ symbol, and domain name');
     } else if( !formdata.subject ){
       setError(true);
       setMessage('Subject is required');
@@ -61,9 +64,9 @@ function Contact(){
         }))
     }
 
-    
 
-    
+
+
   }
   const handleChange = (event) => {
     setFormdata({
